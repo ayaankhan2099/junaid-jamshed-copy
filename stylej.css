@@ -1,0 +1,556 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Alata', sans-serif;
+}
+.top-utility-bar {
+    background-color: #f5f5f5; /* Light grey background from screenshot */
+    border-bottom: 1px solid #e0e0e0;
+    padding: 8px 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.utility-links a {
+    text-decoration: none;
+    color: #4a77a1; /* Specific blue-grey for links */
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    margin-right: 25px;
+    text-transform: uppercase;
+}
+
+.utility-promo {
+    font-size: 11px;
+    letter-spacing: 0.5px;
+}
+
+.promo-text {
+    font-weight: 600;
+    color: #000;
+    font-size: 14px; /* Larger bold text from image */
+}
+
+.promo-link {
+    color: #b18e36; /* Golden/Tan color for the gift card link */
+    text-decoration: none;
+    margin-left: 5px;
+}
+
+.welcome-msg {
+    margin-left: 30px;
+    color: #4a77a1;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+.utility-links a:hover, .promo-link:hover {
+    text-decoration: underline;
+}
+/* Layout Helpers */
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* --- Top Bar Styles --- */
+.top-bar {
+    background: #f5f5f5;
+    padding: 10px 0;
+    font-family: sans-serif;
+    border-bottom: 1px solid #ddd;
+}
+
+.top-bar-left a {
+    font-size: 11px;
+    color: #4a77a1;
+    text-decoration: none;
+    margin-right: 20px;
+    letter-spacing: 1px;
+}
+
+.promo-title {
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.promo-btn {
+    color: #b18e36;
+    text-decoration: none;
+    font-size: 11px;
+    margin: 0 15px 0 5px;
+}
+
+.welcome-label {
+    color: #4a77a1;
+    font-size: 11px;
+}
+
+/* --- Dark Navigation Styles --- */
+.nav-dark {
+    background: #000;
+    color: #fff;
+    padding: 15px 0;
+}
+
+/* Logic to keep logo centered */
+.nav-section-left, .nav-section-right {
+    flex: 1;
+}
+.nav-section-right {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.site-logo {
+    font-family: serif;
+    font-size: 40px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav-action {
+    color: #fff;
+    text-decoration: none;
+    font-size: 12px;
+    margin-left: 20px;
+    letter-spacing: 1px;
+}
+
+.cart-bold {
+    font-weight: bold;
+}
+
+.lang-selector {
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+}
+
+.lang-selector img {
+    margin-right: 5px;
+}
+/* General Setup */
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* --- Top Bar (Light Grey) --- */
+.top-bar {
+    background-color: #f6f6f6;
+    border-bottom: 1px solid #e5e5e5;
+    padding: 10px 0;
+}
+
+.top-left a, .welcome-text {
+    font-size: 11px;
+    color: #4a6a8a;
+    text-decoration: none;
+    margin-right: 25px;
+    letter-spacing: 1px;
+}
+
+.promo-bold {
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.promo-gold {
+    color: #b18e36;
+    text-decoration: none;
+    font-size: 11px;
+    margin: 0 25px 0 5px;
+}
+
+/* --- Mid Nav (Black) --- */
+.mid-nav {
+    background-color: #000;
+    color: #fff;
+    padding: 15px 0;
+}
+
+.mid-left, .mid-right { flex: 1; }
+.mid-right { display: flex; justify-content: flex-end; align-items: center; }
+
+.country-pill {
+    display: flex;
+    align-items: center;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.brand-logo {
+    font-family: serif;
+    font-size: 42px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.action-link {
+    color: #fff;
+    text-decoration: none;
+    font-size: 12px;
+    margin-left: 25px;
+    letter-spacing: 1px;
+}
+
+.cart-bold { font-weight: bold; }
+.currency-label { margin-left: 25px; font-size: 12px; cursor: pointer; }
+
+/* --- Bottom Menu (Darker Black/Grey) --- */
+.bottom-menu {
+    background-color: #0a0a0a;
+    border-top: 1px solid #222;
+    padding: 12px 0;
+}
+
+.menu-center {
+    justify-content: center;
+    gap: 30px;
+}
+
+.bottom-menu a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.bottom-menu a:hover {
+    color: #b18e36;
+}
+
+/* Core Layout */
+
+.wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1350px;
+    margin: 0 auto;
+    padding: 0 20px;
+    font-family: 'Helvetica', Arial, sans-serif;
+}
+
+/* 1. Top Utility */
+.head-top { background: #f5f5f5; padding: 8px 0; border-bottom: 1px solid #eee; }
+.top-links a, .txt-welcome { font-size: 11px; color: #4a6a8a; text-decoration: none; margin-right: 20px; letter-spacing: 1px; }
+.txt-bold { font-weight: 700; font-size: 14px; }
+.txt-gold { color: #b18e36; font-size: 11px; text-decoration: none; margin-left: 5px; }
+
+/* 2. Mid Branding */
+.head-mid { background: #000; color: #fff; padding: 10px 0; }
+.mid-left, .mid-right { flex: 1; }
+.mid-right { display: flex; justify-content: flex-end; align-items: center; }
+.mid-logo a { font-family: serif; font-size: 45px; color: #fff; text-decoration: none; font-weight: bold; }
+.pk-tag { font-size: 12px; display: flex; align-items: center; font-weight: bold; }
+.pk-tag img { margin-right: 6px; }
+.icon-btn { color: #fff; text-decoration: none; font-size: 12px; margin-left: 20px; letter-spacing: 1px; }
+.currency { margin-left: 20px; font-size: 12px; }
+
+/* 3. Bottom Nav */
+.head-nav { background: #0a0a0a; padding: 12px 0; border-top: 1px solid #222; }
+.nav-flex { justify-content: center; gap: 30px; }
+.head-nav a { color: #fff; text-decoration: none; font-size: 12px; font-weight: 600; letter-spacing: 1px; }
+
+/* 4. New Arrival Filter */
+.filter-bar { padding: 60px 0; background: #fff; }
+.filter-flex { align-items: center; }
+.filter-title { font-family: serif; font-size: 36px; font-weight: 400; margin: 0; }
+.filter-buttons { display: flex; gap: 10px; }
+.pill-btn {
+    background: #000;
+    color: #fff;
+    border: none;
+    padding: 12px 35px;
+    border-radius: 50px; /* Rounded pill shape from screenshot */
+    font-size: 11px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.pill-btn:hover { background: #333; }
+
+/* Core Setup */
+body { margin: 0; font-family: Arial, sans-serif; background-color: #fdfaf5; }
+.box { max-width: 1400px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; padding: 0 20px; }
+
+/* Horizontal Slider */
+.collections { padding-bottom: 50px; }
+.section-title { font-family: serif; font-size: 28px; margin-bottom: 20px; padding-left: 20px; }
+
+.horizontal-slider {
+  display: flex;
+  overflow-x: auto; /* This enables the horizontal scroll */
+  gap: 15px;
+  padding: 10px 20px 30px 20px;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch; /* Smooth scroll for mobile */
+  background-color: #f4e6d9;
+}
+
+/* Hide scrollbar but keep functionality for a cleaner look */
+.horizontal-slider::-webkit-scrollbar { height: 6px; }
+.horizontal-slider::-webkit-scrollbar-thumb { background: #ccc; border-radius: 10px; }
+
+.collection-card {
+  flex: 0 0 280px; /* Each card stays exactly 280px wide */
+  text-align: left;
+}
+
+.collection-card img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.collection-card h3 { font-size: 15px; margin: 15px 0 5px 0; font-family: serif; }
+.collection-card p { font-size: 12px; color: #666; margin: 0; line-height: 1.4; }
+
+/* Reusing core styles from previous response... */
+
+/* --- HOVER EFFECTS FOR SLIDER CARDS --- */
+.hover-card {
+    flex: 0 0 300px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.img-container {
+    overflow: hidden; /* Clips the image when it zooms */
+    background-color: #eee;
+}
+
+.main-img {
+    width: 100%;
+    display: block;
+    transition: transform 0.6s ease, opacity 0.3s ease;
+}
+
+/* Effect: Image zooms slightly and gets a tiny bit darker/lighter on hover */
+.hover-card:hover .main-img {
+    transform: scale(1.05);
+    opacity: 0.9;
+}
+
+.hover-card h3 {
+    transition: color 0.3s ease;
+}
+
+.hover-card:hover h3 {
+    color: #b18e36; /* Changes title to gold on hover */
+}
+
+.grid-section{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.inner-wrap{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* --- HOVER EFFECTS FOR CATEGORY GRIDS --- */
+.cat-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(205px,100px));
+    gap: 50px;
+    width: 100%;
+    justify-content: center;
+}
+
+.cat-item {
+    text-align: center;
+    cursor: pointer;
+    height: 250px;
+    width: 250px;
+}
+
+.zoom-box {
+    overflow: hidden;
+    margin-bottom: 15px;
+}
+
+.zoom-box img {
+    width: 100%;
+    transition: transform 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+/* Effect: Smooth zoom for the category boxes */
+.cat-item:hover .zoom-box img {
+    transform: scale(1.1);
+}
+
+.cat-item h4 {
+    font-size: 12px;
+    letter-spacing: 2px;
+    position: relative;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+/* Effect: Underline grows from center */
+.cat-item h4::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 1px;
+    bottom: 0;
+    left: 50%;
+    background-color: #000;
+    transition: all 0.3s ease;
+}
+
+.cat-item:hover h4::after {
+    width: 100%;
+    left: 0;
+}
+.inner-wrap h2{
+    text-align: center;
+}
+
+/* Footer Wrapper */
+footer{
+   margin-top: 50px;
+}
+.footer-wrap {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 20px;
+    text-align: center;
+}
+
+/* Newsletter Section */
+.footer-newsletter {
+    background-color: #1a1a1a;
+    color: #fff;
+    padding: 60px 0;
+}
+
+.footer-newsletter .serif-title {
+    font-family: serif;
+    font-size: 28px;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+.newsletter-sub {
+    font-size: 13px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    opacity: 0.9;
+}
+
+.signup-form {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.email-input {
+    width: 350px;
+    padding: 12px 15px;
+    border: none;
+    font-size: 14px;
+}
+
+.signup-btn {
+    background: transparent;
+    color: #fff;
+    border: 1.5px solid #fff;
+    padding: 10px 30px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.signup-btn:hover {
+    background: #fff;
+    color: #000;
+}
+
+/* Links Section */
+.footer-links {
+    background-color: #fff;
+    padding: 60px 0;
+    color: #333;
+}
+
+.grid-footer {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    text-align: left;
+    align-items: start;
+}
+
+.serif-h3 {
+    font-family: serif;
+    font-size: 20px;
+    margin-bottom: 25px;
+}
+
+.footer-label {
+    font-size: 14px;
+    text-transform: none;
+    margin-bottom: 25px;
+    color: #131313;
+}
+
+.link-list, .contact-info {
+    list-style: none;
+    padding: 0;
+}
+
+.link-list li {
+    margin-bottom: 12px;
+}
+
+.link-list a {
+    text-decoration: none;
+    color: #666;
+    font-size: 13px;
+    transition: 0.2s;
+}
+
+.link-list a:hover {
+    color: #000;
+}
+
+.contact-info li {
+    font-size: 13px;
+    margin-bottom: 15px;
+}
+
+.small-text {
+    font-size: 11px;
+    color: #888;
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+    font-size: 18px;
+}
+
+.social-icons a {
+    color: #333;
+    text-decoration: none;
+}
